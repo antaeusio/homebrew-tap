@@ -5,23 +5,23 @@ class Antaeus < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/antaeusio/antaeus/releases/download/v0.1.0/antaeus_0.1.0_darwin_arm64.tar.gz"
-      sha256 "2908b06a76e46b7adfafc53075a82afa88d0777077c6f394734fbe0c8c8938e1"
+      url "https://github.com/antaeusio/antaeus/releases/download/v0.2.0/antaeus_0.2.0_darwin_arm64.tar.gz"
+      sha256 "fc29543846c6b0e966cd7fd7441a8999bd94a9bf875a600a18af4bcfd84b3fe2"
     end
     on_intel do
-      url "https://github.com/antaeusio/antaeus/releases/download/v0.1.0/antaeus_0.1.0_darwin_amd64.tar.gz"
-      sha256 "b2b0c7af8a6a61e8bf6732bb13429ff27bf1cdad4782822aa89a6a9362cf177a"
+      url "https://github.com/antaeusio/antaeus/releases/download/v0.2.0/antaeus_0.2.0_darwin_amd64.tar.gz"
+      sha256 "2a7e2cc18781df0a8ad46a8249b146283c21079dce92d4e9f97482f30b8a9560"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/antaeusio/antaeus/releases/download/v0.1.0/antaeus_0.1.0_linux_arm64.tar.gz"
-      sha256 "c2bb9d4355500763cd943c1ee6f6ab26d451c13df8ccb7931d396c57aa274be9"
+      url "https://github.com/antaeusio/antaeus/releases/download/v0.2.0/antaeus_0.2.0_linux_arm64.tar.gz"
+      sha256 "9f85ceff8946d63b3d765ead829234ca1d6f8d42c59176907144355fe105d363"
     end
     on_intel do
-      url "https://github.com/antaeusio/antaeus/releases/download/v0.1.0/antaeus_0.1.0_linux_amd64.tar.gz"
-      sha256 "a15b5effc952135d7d4fccfeb7de15738c16060802f068648aa07b567260d06c"
+      url "https://github.com/antaeusio/antaeus/releases/download/v0.2.0/antaeus_0.2.0_linux_amd64.tar.gz"
+      sha256 "cd22939e95626b348fc7485c87d48238fdf3d746a037e3a927d79b1e3e4d8f2f"
     end
   end
 
@@ -30,6 +30,6 @@ class Antaeus < Formula
   end
 
   test do
-    assert_match "v0.1.0", shell_output("#{bin}/antaeus version")
+    assert_match "v0.2.0", shell_output("#{bin}/antaeus version")
   end
 end
